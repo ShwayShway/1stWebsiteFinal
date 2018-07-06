@@ -1,0 +1,62 @@
+<html>
+    <head>
+    <style>
+ .outline {
+  overflow: hidden;
+  background-color: green;
+}
+
+.outline a{
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.outline a:hover {
+  background-color: white;
+  color: black;
+}
+
+.active {
+  background-color: white;
+  color: white;
+}
+
+.outline .icon {
+  display: none;
+}
+.z {
+    background-color: lightgrey;
+    border: 25px solid green;
+    padding: 15px;
+    margin: 25px;
+    overflow:hidden;
+    width:100%;
+    text-align:center;
+    font-size:3em;
+
+}
+
+.z:hover{
+  opacity:0.9;
+  overflow:hidden;
+
+}
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+    <body>
+        <p class="z" >School Registration Website</p><br><br>
+        <div class="outline">
+            <a href="index.html">Login</a>
+            <a href="website 2nd page.html">Sign Up</a>
+            <a href="Register your classes.html">Register your School</a>
+            <a href="About.html">About</a><br>
+        </div>
+        {% block body %}{% endblock %}
+    </body>
+</html>
